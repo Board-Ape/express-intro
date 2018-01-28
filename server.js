@@ -54,6 +54,12 @@ app.get('/rock-climbing', (request, response) => {
 
 // express.static() defines the path to your static asset
 app.use(express.static(path.join(__dirname, 'public')));
+
+// adding a custom 404 response page
+app.use((request, response, next) => {
+  response.status(404).sendFile(path.join(__dirname, 'public/404-error.html'))
+})
+
 // tells server to listen for connectios port 3000
 app.listen(3000, () => {
   console.log('Express Into Running On localhost:3000');
