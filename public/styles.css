@@ -1,0 +1,27 @@
+header {
+  display: flex;
+  justify-content: center;
+}
+
+h1, h2 {
+  margin: 0;
+  width: 100%;
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+}
+
+.show-button, .hide-button {
+  font-size: 24px;
+  margin: 10px;
+  border: 2px solid red;
+}
+
+.all-images {
+  display: inline-block;
+}
